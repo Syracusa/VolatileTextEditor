@@ -55,6 +55,7 @@
             // 
             this.DeleteProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.DeleteProgressBar.Location = new System.Drawing.Point(25, 698);
+            this.DeleteProgressBar.Maximum = 10000;
             this.DeleteProgressBar.Name = "DeleteProgressBar";
             this.DeleteProgressBar.Size = new System.Drawing.Size(956, 32);
             this.DeleteProgressBar.TabIndex = 1;

@@ -6,7 +6,7 @@ namespace VolatileTextEditor
     public partial class MainForm : Form
     {
         DateTimeOffset timeOffset;
-        private int deleteInterval;
+        private long deleteInterval;
         private long deleteTick;
 
         FontDialog fontDialog;
@@ -72,7 +72,7 @@ namespace VolatileTextEditor
             if (deleteTick >= current_tick)
             {
                 long diff_tick = deleteTick - current_tick;
-                DeleteProgressBar.Value = (int)((diff_tick * 100) / (deleteInterval * 10000));
+                DeleteProgressBar.Value = (int)((diff_tick * DeleteProgressBar.Maximum) / (deleteInterval * 10000));
             }
             else
             {
